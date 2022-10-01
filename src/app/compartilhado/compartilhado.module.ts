@@ -10,6 +10,9 @@ import { BotaoComponent } from './botao/botao.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BotaoComponent
   ]
 })
 export class CompartilhadoModule { }
