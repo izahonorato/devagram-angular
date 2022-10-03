@@ -17,7 +17,14 @@
     --cinza2: '#7C7786';
     --cinza3: '#4D4C4D';
     --cinza4: '#333333';
+}
 
+* {
+    font-family: var(--fontRegular);
+    font-size: 14px;
+}
 
-
+html,body {
+    height: 100%;
+    margin: 0;
 }

@@ -1,3 +1,13 @@
+@mixin botaoPrimario { //o mixin é um bloco de código com um modelo reutilizavel
+    color: var(--branco);
+    background-color: var(--corPrimaria1);
+}
+ @mixin botaoOutline {
+    background-color: var(--branco);
+    color: var(--corPrimaria1);
+    border: 1px solid var(--corPrimaria1);
+ }
+
 .btn {
     width: 100%;
     border: none;
@@ -5,7 +15,23 @@
     cursor: pointer;
 
     &.primaria {
-        color: var(--branco);
+        @include botaoPrimario;
 
+        &:hover {
+            @include botaoOutline;
+        }
+
+
+        &.outline {
+            @include botaoOutline();
+
+            &:hover {
+                @include botaoPrimario;
+            }
+        }
+    }
+
+    &:disabled {
+        opacity: 0.5;
     }
 }
