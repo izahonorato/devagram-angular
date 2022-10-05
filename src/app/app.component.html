@@ -11,6 +11,7 @@
 
 <app-botao
     texto="Cadastro"
+    (click)="submit()"
 ></app-botao>
 
 <app-botao
@@ -20,6 +21,24 @@
 
 <br>
 <app-upload-imagem
+    [referenciaFormulario]="obterReferencia('imagem')"
     imagemPrevisualizacao="assets/imagens/avatar.svg"
     (aoAtualizarImagem)="aoTrocarImagem()"
 ></app-upload-imagem>
+
+<br>
+<br>
+
+<app-input-publico
+    tipo="text"
+    imagem="assets/imagens/envelope.svg"
+    placeholder="E-mail"
+    [referenciaFormulario]="obterReferencia('nome')"
+></app-input-publico>
+
+<app-input-publico
+    tipo="password"
+    imagem="assets/imagens/chave.svg"
+    placeholder="Senha"
+    [referenciaFormulario]="obterReferencia('senha')"
+></app-input-publico>

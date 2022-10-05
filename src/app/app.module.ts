@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CompartilhadoModule } from './compartilhado/compartilhado.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { CompartilhadoModule } from './compartilhado/compartilhado.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CompartilhadoModule
+    CompartilhadoModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
