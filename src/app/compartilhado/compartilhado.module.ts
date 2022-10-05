@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BotaoComponent } from './botao/botao.component';
+import { AvatarComponent } from './avatar/avatar.component';
 
 
 
 @NgModule({
   declarations: [
-    BotaoComponent
+    BotaoComponent,
+    AvatarComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    BotaoComponent
+    BotaoComponent,
+    AvatarComponent
   ]
 })
 export class CompartilhadoModule { }
