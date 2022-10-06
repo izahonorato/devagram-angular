@@ -11,9 +11,11 @@
     --corPrimaria3: #F0F5FF;
 
     --branco: #FFFFFF;
+
+    --vermelho: #FF0000;
     
     --cinza: #F4F4F4;
-    --cinza1: #DADADA
+    --cinza1: #DADADA;
     --cinza2: #7C7786;
     --cinza3: #4D4C4D;
     --cinza4: #333333;
@@ -31,4 +33,20 @@ html,body {
 .oculto{
     display: none !important;
     
+}
+
+input{
+
+    &::placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder{
+        color: var(--cinza2);
+    }
+ 
+}
+
+.mensagemErro{
+    color: var(--vermelho);
+    margin: 5px 0 0;
+    font-size: 90%;
 }

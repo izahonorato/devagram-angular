@@ -4,7 +4,8 @@ import { BotaoComponent } from './botao/botao.component';
 import { AvatarComponent } from './avatar/avatar.component';
 import { UploadImagemComponent } from './upload-imagem/upload-imagem.component';
 import { InputPublicoComponent } from './publico/input-publico/input-publico.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { PaginaPublicaComponent } from './publico/pagina-publica/pagina-publica.component'
 
 
 
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms'
     BotaoComponent,
     AvatarComponent,
     UploadImagemComponent,
-    InputPublicoComponent
+    InputPublicoComponent,
+    PaginaPublicaComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { FormsModule } from '@angular/forms'
     BotaoComponent,
     AvatarComponent,
     UploadImagemComponent,
-    InputPublicoComponent
+    InputPublicoComponent,
+    PaginaPublicaComponent
   ]
 })
 export class CompartilhadoModule { }
