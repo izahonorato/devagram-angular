@@ -9,6 +9,7 @@ export class PaginaPublicaComponent implements OnInit {
 
   @Input() classeCssLogo: string = '';
   @Input() classeCssCustomizada: string = '';
+  @Input() textoBotaoSubmit: string ='';
   constructor() { }
 
   ngOnInit(): void {

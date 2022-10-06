@@ -10,6 +10,11 @@
     <div class="containerConteudo">
         <form (submit)="aoSubmeter()">
             <ng-content select="[conteudoFormulario"></ng-content>
+            <app-botao
+                [texto]="textoBotaoSubmit"
+                type="submit"
+                classeCss="botaoPublico"
+            ></app-botao>
         </form>
     </div>
 
