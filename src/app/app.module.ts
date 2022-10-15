@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { CompartilhadoModule } from './compartilhado/compartilhado.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { LoginModule } from './login/login.module';
+import { CadastroModule } from './cadastro/cadastro.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CompartilhadoModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    LoginModule,
+    CadastroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
