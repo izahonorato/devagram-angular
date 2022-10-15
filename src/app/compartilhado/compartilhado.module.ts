@@ -5,7 +5,9 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { UploadImagemComponent } from './upload-imagem/upload-imagem.component';
 import { InputPublicoComponent } from './publico/input-publico/input-publico.component';
 import { FormsModule } from '@angular/forms';
-import { PaginaPublicaComponent } from './publico/pagina-publica/pagina-publica.component'
+import { PaginaPublicaComponent } from './publico/pagina-publica/pagina-publica.component';
+import { RodapePaginaPublicaComponent } from './publico/rodape-pagina-publica/rodape-pagina-publica.component'
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,18 +17,21 @@ import { PaginaPublicaComponent } from './publico/pagina-publica/pagina-publica.
     AvatarComponent,
     UploadImagemComponent,
     InputPublicoComponent,
-    PaginaPublicaComponent
+    PaginaPublicaComponent,
+    RodapePaginaPublicaComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     BotaoComponent,
     AvatarComponent,
     UploadImagemComponent,
     InputPublicoComponent,
-    PaginaPublicaComponent
+    PaginaPublicaComponent,
+    RodapePaginaPublicaComponent
   ]
 })
 export class CompartilhadoModule { }
