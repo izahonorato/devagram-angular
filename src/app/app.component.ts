@@ -7,7 +7,5 @@ import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/fo
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'devagram-angular';
 
- 
 }
