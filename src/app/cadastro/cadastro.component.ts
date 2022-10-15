@@ -26,4 +26,8 @@ export class CadastroComponent implements OnInit {
     return this.form.controls[nomeCampo];
   }
 
+  public aoSubmeter(){
+    console.log('teste submit');
+  }
+
 }
