@@ -1,5 +1,17 @@
 <app-pagina-publica
-    textoBotaoSubmit="Cadastrar">
+    textoBotaoSubmit="Cadastrar"
+    classeCssCustomizada="paginaCadastro"
+    classeCssLogo="desktop"
+>
+
+    <app-upload-imagem
+        imagemPrevisualizacao="assets/imagens/avatar.svg"
+        classeCssimagemPrevisualizacao="avatarPrevisualizacao"
+        classeCssContainer="paginaCadastroUpload"
+        conteudoFormulario
+        [referenciaFormulario]="obterReferencia('file')"
+    ></app-upload-imagem>
+
     <app-input-publico
         imagem="assets/imagens/usuarioAtivo.svg"
         placeholder="Nome Completo"
