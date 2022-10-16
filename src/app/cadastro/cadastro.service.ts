@@ -8,7 +8,7 @@ import { Cadastro } from './cadastro.type';
 })
 export class CadastroService extends DevagramApiService{
   cadastrar(dadosCadastro: Cadastro): Promise<RespostaApiDevagram>{
-    return this.post('cadastro', dadosCadastro)
+    return this.post('register', dadosCadastro)
 
   }
 }
