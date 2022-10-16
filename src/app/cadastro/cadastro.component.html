@@ -2,6 +2,7 @@
     textoBotaoSubmit="Cadastrar"
     classeCssCustomizada="paginaCadastro"
     classeCssLogo="desktop"
+    (submeterFormulario)="aoSubmeter()"
 >
 
     <app-upload-imagem
@@ -24,7 +25,7 @@
         imagem="assets/imagens/envelope.svg"
         placeholder="E-mail"
         tipo="email"
-        [referenciaFormulario]="obterReferencia('login')"
+        [referenciaFormulario]="obterReferencia('email')"
         conteudoFormulario
     ></app-input-publico>
 
