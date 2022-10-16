@@ -46,7 +46,7 @@ export class CadastroComponent implements OnInit {
         corpoDaRequisicao.append('senha', valoresDoFormulario.senha);
       }
       await this.servicoCadastro.cadastrar(corpoDaRequisicao);
-      alert('cadastro realizado com sucesso!');
+      //fazer login
 
     }catch(error: any){
       const mensagemErro = error?.error?.erro || 'Erro ao realizar cadastro'
