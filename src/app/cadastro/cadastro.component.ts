@@ -36,7 +36,8 @@ export class CadastroComponent implements OnInit {
 
     try{
       const valoresDoFormulario = this.form.value;
-      let corpoDaRequisicao = valoresDoFormulario;
+      let corpoDaRequisicao = valoresDoFormulario
+      
 
       if(valoresDoFormulario.file){
         corpoDaRequisicao = new FormData();

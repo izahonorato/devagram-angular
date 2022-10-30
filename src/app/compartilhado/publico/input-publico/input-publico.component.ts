@@ -43,8 +43,6 @@ export class InputPublicoComponent implements OnInit {
       return 'As senhas não conferem'
     }
 
-    
-
     return ''
   }
 
