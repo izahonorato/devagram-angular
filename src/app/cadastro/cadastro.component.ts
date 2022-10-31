@@ -49,8 +49,8 @@ export class CadastroComponent implements OnInit {
       await this.servicoCadastro.cadastrar(corpoDaRequisicao);
       //fazer login
 
-    }catch(error: any){
-      const mensagemErro = error?.error?.erro || 'Erro ao realizar cadastro'
+    }catch(excecao: any){
+      const mensagemErro = excecao?.error?.erro || 'Erro ao realizar cadastro'
       alert(mensagemErro)
     }
   }
